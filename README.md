@@ -1,5 +1,5 @@
 # 🚀 Structure-aware Prompt Adaptation (SPA)
-> Official PyTorch implementation of **"Structure-aware Prompt Adaptation from Seen to Unseen for Open-Vocabulary Compositional Zero-Shot Learning" 
+> Official PyTorch implementation of "Structure-aware Prompt Adaptation from Seen to Unseen for Open-Vocabulary Compositional Zero-Shot Learning" 
 
 ## ✨ Overview
 **SPA (Structure-aware Prompt Adaptation)** is a **plug-and-play module** that improves **Open-Vocabulary Compositional Zero-Shot Learning (OV-CZSL)** by preserving and leveraging the **local semantic structure** in CLIP’s embedding space.

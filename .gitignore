@@ -11,3 +11,14 @@ venv/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Training artifacts
+checkpoints/
+checkpoints4CLIP/
+tensorboards/
+outputs/
+*.pth
+*.ckpt
+
+# Large optional pre-computed features (publish separately if needed)
+data_files/**/*.pt

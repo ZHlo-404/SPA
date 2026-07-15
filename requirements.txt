@@ -1,0 +1,17 @@
+# Install PyTorch, TorchVision, and the CUDA toolkit as documented in README.md
+# before installing these Python dependencies.
+
+clip @ git+https://github.com/openai/CLIP.git@dcba3cb2e2827b402d2701e7e1c7d9fed8a20ef1
+einops==0.8.0
+fvcore==0.1.5.post20221221
+matplotlib==3.9.2
+numpy==1.23.1
+Pillow==9.2.0
+prettytable==3.4.1
+scikit-learn==1.5.2
+scipy==1.9.1
+seaborn==0.13.2
+tensorboard==2.10.0
+thop==0.1.1.post2209072238
+tqdm==4.66.5
+yacs==0.1.8

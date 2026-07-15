@@ -1,18 +1,18 @@
-config_name: 'mit' 
+config_name: 'mit'
 
 DATASET:
   dset_name: 'mit'
   dset_split: '1'
   name: 'mitstates'
-  root_dir: '/data/datasets/mit-states'
+  root_dir: 'datasets/mit-states'
   splitname: 'compositional-split-natural'
-  split_files_loc: 'Data_files/MIT'
- 
+  split_files_loc: 'data_files/MIT'
+
 DISTRIBUTED:
   world_size: 1
 
 MODEL:
-  
+
   attr_emb_dim: 300
   aux_loss_reweight: False
   classifier: 'cosine'
@@ -22,17 +22,17 @@ MODEL:
   drop_input: 0.0
   dropout_cross_attn: 0.0
   emb_dim: 300
-  emb_loss_main: 0.1 
-  extra_pair_loss_ratio: 0.2 
-  extra_attr_loss_ratio: 0 #0.05 
-  extra_obj_loss_ratio: 0 #0.05 
-  extra_neighbor_weight: 0.05 
-  seen_loss_ratio: 0.1 
+  emb_loss_main: 0.1
+  extra_pair_loss_ratio: 0.2
+  extra_attr_loss_ratio: 0 #0.05
+  extra_obj_loss_ratio: 0 #0.05
+  extra_neighbor_weight: 0.05
+  seen_loss_ratio: 0.1
   smoothing: 0.8
-  unseen_loss_ratio: 0.1 
-  w_loss_attr: 0.05 
+  unseen_loss_ratio: 0.1
+  w_loss_attr: 0.05
   w_loss_main: 1.0
-  w_loss_obj: 0.05 
+  w_loss_obj: 0.05
   image_pair_multihead_attn_dim: 256
   image_pair_multihead_num_heads: 2
   img_emb_drop: 0.3
@@ -62,26 +62,26 @@ MODEL:
 
 TRAIN:
   batch_size: 256
-  checkpoint_dir:  'checkpoints4CLIP'
-  clip_type: 'res18' 
+  checkpoint_dir:  'checkpoints'
+  clip_type: 'res18'
   comb_features: False
   decay_factor: 0.1
   decay_patience: 2
   decay_strategy: 'milestone'
   disp_interval: 93
   eval_every_epoch: 1
-  final_max_epoch: 20 
+  final_max_epoch: 20
   finetune_backbone: False
   log_dir: 'tensorboards'
-  lr: 1e-3 
+  lr: 1e-3
   lr_decay_milestones: [120, 130]
-  lr_encoder: 3e-5  
+  lr_encoder: 3e-5
   lr_word_embedding: 5e-5
-  max_epoch: 20 
+  max_epoch: 20
   n_sample_hard_negative: 25
-  num_workers: 4 
+  num_workers: 4
   sample_hard_negative: True
-  sample_negative_pairs: -1 
+  sample_negative_pairs: -1
   sample_similar_object: False
   save_every_epoch: 1
   seed: 124
@@ -89,7 +89,7 @@ TRAIN:
   start_epoch_validate: 0
   test_batch_size: 256
   use_precomputed_features: False
-  wd: 1e-6 
+  wd: 1e-6
   wd_encoder: 5e-5
   clip_model: 'ViT-B/32'
   context_length: 8

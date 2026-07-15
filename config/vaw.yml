@@ -1,15 +1,15 @@
-config_name: 'vaw' 
+config_name: 'vaw'
 
 DATASET:
   dset_name: 'vaw'
   dset_split: '1'
   name: 'vaw'
-  root_dir: '/data/datasets/vaw-czsl'
+  root_dir: 'datasets/vaw-czsl'
   splitname: 'compositional-split-natural'
-  split_files_loc: 'Data_files/VAW'
+  split_files_loc: 'data_files/VAW'
 
 DISTRIBUTED:
-  world_size: 4
+  world_size: 1
 
 MODEL:
     attn_normalized: true

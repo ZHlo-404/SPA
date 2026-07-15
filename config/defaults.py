@@ -9,7 +9,7 @@ _C.config_name = 'attribute_probing'
 # -----------------------------------------------------------------------
 _C.DATASET = CN(new_allowed=True)
 _C.DATASET.name = 'mitstates'
-_C.DATASET.root_dir = '/'
+_C.DATASET.root_dir = 'datasets/mit-states'
 _C.DATASET.splitname = 'compositional-split-natural'
 
 # -----------------------------------------------------------------------
@@ -36,8 +36,8 @@ _C.TRAIN = CN(new_allowed=True)
 
 _C.TRAIN.loss = 'bce' # or 'lsep'
 
-_C.TRAIN.log_dir = '/'
-_C.TRAIN.checkpoint_dir = '/'
+_C.TRAIN.log_dir = 'tensorboards'
+_C.TRAIN.checkpoint_dir = 'checkpoints'
 _C.TRAIN.seed = 124
 _C.TRAIN.num_workers = 4
 

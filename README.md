@@ -55,10 +55,17 @@ conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch
 pip install -r requirements.txt
 ```
 
-
 ## 📂 Data Preparation
 
-Download the image data for MIT-States, C-GQA, or VAW-CZSL and keep the auxiliary split files provided in `data_files/`. The dataset root can be supplied from the command line, so no local absolute path needs to be written into a configuration file.
+Please download the datasets from their official sources:
+
+* [MIT-States](http://wednesday.csail.mit.edu/joseph_result/state_and_transformation/release_dataset.zip)
+* [C-GQA](https://s3.mlcloud.uni-tuebingen.de/czsl/cgqa-updated.zip)
+* [VAW-CZSL](https://drive.google.com/drive/folders/1CalwDXkkGALxz0e-aCFg9xBmf7Pu4eXL?usp=sharing)
+
+After downloading, organize the datasets following the expected directory
+structure and specify the dataset root through `DATASET.root_dir`.
+
 
 
 ## 🚀 Training

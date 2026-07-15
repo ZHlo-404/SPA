@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧩 Structure-aware Prompt Adaptation from Seen to Unseen for Open-Vocabulary Compositional Zero-Shot Learning
+# Structure-aware Prompt Adaptation from Seen to Unseen for Open-Vocabulary Compositional Zero-Shot Learning
 
 ### IEEE Transactions on Multimedia (TMM), 2026
 
@@ -21,14 +21,6 @@ This repository provides the official PyTorch implementation of **Structure-awar
 
 ## 🔍 Overview
 
-<p align="center">
-  <img src="assets/framework.jpg" width="95%">
-</p>
-
-<p align="center">
-  Overview of the proposed Structure-aware Prompt Adaptation framework.
-</p>
-
 OV-CZSL requires a model to recognize compositions containing both seen and unseen attributes and objects. Prompt-tuning methods learn effective representations for seen primitives, but their learned prompts do not naturally transfer to concepts that are absent during training.
 
 SPA addresses this problem by exploiting the local semantic structures shared by related primitives. It consists of two complementary components:
@@ -37,6 +29,14 @@ SPA addresses this problem by exploiting the local semantic structures shared by
 - **Structure-guided Adaptation Strategy (SAS):** transfers the learned prompt shifts from semantically related seen primitives to unseen primitives during inference.
 
 SPA is designed as a plug-and-play approach. This repository integrates it with **CSP**, **HPL**, **DFSP**, and **Troika**, and supports experiments on **MIT-States**, **C-GQA**, and **VAW-CZSL**.
+
+<p align="center">
+  <img src="assets/framework.jpg" width="95%">
+</p>
+
+<p align="center">
+  Overview of the proposed Structure-aware Prompt Adaptation framework.
+</p>
 
 ## 🛠️ Installation
 
